@@ -1,0 +1,18 @@
+/**
+ * Fable
+ */
+body {
+  font-family: 'Lato', sans-serif; }
+
+h1 {
+  font-size: 80px; }
+
+.main {
+  max-width: 1200px; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.fable__header {
+  display: block; }
