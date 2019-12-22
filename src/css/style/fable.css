@@ -1,0 +1,17 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+h1 {
+  color: #1abc9c;
+  font-size: 80px; }
+
+.main {
+  max-width: 1200px; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.footer {
+  background: #eceff1;
+  color: #bdc1c5; }

@@ -1,12 +1,13 @@
-/**
- * Fable
- */
+@import 'vars';
+
+// Fable
 
 body {
   font-family: 'Lato', sans-serif;
 }
 
 h1 {
+  color: $green;
   font-size: 80px;
 }
 
@@ -19,9 +20,7 @@ img {
   height: auto;
 }
 
-.fable {
-
-  &__header {
-    display: block;
-  }
+.footer {
+  background: $gray-1;
+  color: $gray-2;
 }
