@@ -21,7 +21,7 @@ class Hero extends React.Component {
     return (
       <div className="hero">
         <img
-          class="lazyload"
+          className="lazyload"
           data-srcset="../src/img/hero.jpg"
           data-sizes="auto"
         />
