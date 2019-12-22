@@ -20,8 +20,11 @@ class Hero extends React.Component {
 
     return (
       <div className="hero">
-        {/* <h3>{ this.testString() }</h3> */}
-        <img src="../src/img/hero.jpg" alt="Fable" />
+        <img
+          class="lazyload"
+          data-srcset="../src/img/hero.jpg"
+          data-sizes="auto"
+        />
       </div>
     );
   }
