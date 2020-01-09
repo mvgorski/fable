@@ -1,14 +1,23 @@
 [
   {
+    "id": 1,
+    "art": "ladies-gentlemen-art.png",
     "title": "Ladies & Gentlemen",
+    "selected": false,
     "year": 2009
   },
   {
+    "id": 2,
+    "art": "great-attractor-art.jpg",
     "title": "The Great Attractor",
+    "selected": false,
     "year": 2013
   },
   {
+    "id": 3,
+    "art": "dark-flow-art.jpg",
     "title": "Dark Flow",
+    "selected": false,
     "year": 2013
   }
 ]

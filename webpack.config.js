@@ -26,11 +26,11 @@ const config = {
         exclude: /node_modules/,
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(s|c)ss$/i,
         use: [
           {loader: 'style-loader'},
           {loader: 'css-loader'},
-          { loader: 'sass-loader' }
+          {loader: 'sass-loader'}
         ]
       },
     ],
@@ -39,6 +39,7 @@ const config = {
     alias: {
       'Js': path.resolve(__dirname, 'src/js/'),
     },
+    extensions: ['*', '.js', '.jsx'],
   },
 };
 

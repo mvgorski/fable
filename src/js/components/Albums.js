@@ -1,51 +1,42 @@
 import React from 'react';
-import albums from '../data/albums-json';
 
 class Albums extends React.Component {
-  constructor() {
-    super()
-    this.albums = albums;
-    this.testObj = [
-      {
-        title: 'what'
-      },
-      {
-        title: 'huh'
-      }
-    ];
-  }
-
-  componentDidMount() {
-    console.log(albums, this.albums);
-    console.log(this.test());
-  }
-
-  test() {
-    this.albums.forEach((album) => {
-      console.log(album);
-    });
-  }
-
-  testString() {
-    const test = 'aaron-rodgers-handle-BIG-HANDLE'
-    const numbers = 789456;
-    const stringToAppend = 'holy super cali fragilistic';
-    return `${test} but nonsense ${stringToAppend} ++ ${numbers}`;
+  constructor(props) {
+    super(props)
+    console.log(props);
   }
 
   render() {
+    const { albums, setCurrentAlbum } = this.props;
+    console.log('setcurrentalbum', setCurrentAlbum);
+
     return (
-      <div className="albums">
+      <ul className="albums">
         {
           albums.map((album, i) => {
+            const albumArt = `../src/img/${ album.art }`;
+
             return (
-              <div key={i} className="albums__album">
-                <h3>{ album.title }</h3>
-              </div>
+              <li
+                key={i}
+                className="album"
+                onClick={() => setCurrentAlbum(album) }
+              >
+                <div className="album__content">
+                  <h2>{ album.title }</h2>
+                  <div className="album__art-wrap">
+                    <img
+                      className="lazyload"
+                      data-srcset={ albumArt }
+                      data-sizes="auto"
+                    />
+                  </div>
+                </div>
+              </li>
             )
           })
         }
-      </div>
+      </ul>
     );
   }
 }
